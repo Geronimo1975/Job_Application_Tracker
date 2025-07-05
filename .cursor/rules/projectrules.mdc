@@ -1,0 +1,127 @@
+# Django + AI + Automation Project Rules
+
+## Core Development Principles
+- Always use Django best practices and security patterns
+- Prefer class-based views over function-based views for complex logic
+- Use Django ORM instead of raw SQL unless absolutely necessary
+- Include proper error handling and logging in all functions
+- Follow PEP 8 and Django coding standards
+- Use type hints for all function parameters and return values
+- Include comprehensive docstrings for all classes and functions
+
+## Django Specific Rules
+- Always validate user input using Django forms or serializers
+- Use Django's built-in authentication and authorization systems
+- Implement proper CSRF protection for all forms
+- Use Django's migration system for all database changes
+- Follow Django's MVT (Model-View-Template) architecture
+- Use Django's caching framework for performance optimization
+- Implement proper database indexing for frequently queried fields
+
+## Security Requirements
+- Never store sensitive data in plain text
+- Always use environment variables for configuration
+- Implement proper rate limiting for API endpoints
+- Use HTTPS in production and secure cookie settings
+- Validate and sanitize all user inputs
+- Implement proper logging for security events
+- Use Django's built-in security middleware
+
+## AI/RAG System Rules
+- Prioritize data privacy and user consent for AI processing
+- Implement efficient vector operations and embedding management
+- Use proper error handling for all AI/ML API calls
+- Implement rate limiting for AI model requests
+- Cache AI responses when appropriate to reduce costs
+- Include fallback mechanisms when AI services are unavailable
+- Monitor AI system performance and response times
+
+## Database Rules (PostgreSQL)
+- Use database transactions for data integrity
+- Implement proper database indexing strategies
+- Use connection pooling for performance
+- Regular database backups and migration testing
+- Optimize queries and avoid N+1 problems
+- Use database constraints for data validation
+- Monitor database performance metrics
+
+## Docker & Deployment Rules
+- Use multi-stage Docker builds for optimization
+- Implement health checks for all containers
+- Use proper environment variable management
+- Separate configurations for dev/staging/production
+- Implement proper logging and monitoring
+- Use volume mounts for persistent data
+- Regular security updates for base images
+
+## Automation Integration Rules (n8n/Make.com)
+- Create robust webhook endpoints with authentication
+- Implement proper input validation and sanitization
+- Include retry logic and exponential backoff
+- Provide clear API documentation and examples
+- Use structured error responses with proper HTTP status codes
+- Implement request/response logging for debugging
+- Design idempotent operations where possible
+
+## GitHub Actions CI/CD Rules
+- Run comprehensive tests before deployment
+- Implement security scanning in CI pipeline
+- Use proper secret management
+- Include database migration testing
+- Implement rollback strategies for failed deployments
+- Monitor deployment success and performance
+- Use environment-specific configurations
+
+## Code Organization Rules
+- Group related functionality into Django apps
+- Use consistent naming conventions throughout
+- Separate business logic from view logic
+- Implement proper separation of concerns
+- Use Django's settings structure for configuration
+- Organize static files and templates logically
+- Keep dependencies minimal and well-documented
+
+## Testing Requirements
+- Write unit tests for all models and business logic
+- Include integration tests for API endpoints
+- Test all automation workflows and webhooks
+- Implement performance testing for critical paths
+- Test error handling and edge cases
+- Use fixtures and factories for test data
+- Maintain high test coverage (>80%)
+
+## Performance Optimization
+- Use Django's select_related and prefetch_related
+- Implement proper caching strategies
+- Optimize database queries and indexes
+- Use CDN for static file serving
+- Implement lazy loading where appropriate
+- Monitor and profile application performance
+- Use background tasks for long-running operations
+
+## Documentation Standards
+- Include comprehensive API documentation
+- Document all configuration options
+- Provide setup and deployment instructions
+- Include troubleshooting guides
+- Document all integrations and webhooks
+- Maintain up-to-date dependency lists
+- Include examples for common use cases
+
+## Monitoring and Logging
+- Implement structured logging throughout the application
+- Monitor application performance and errors
+- Set up alerts for critical system failures
+- Log all security-related events
+- Monitor AI system usage and costs
+- Track automation workflow success rates
+- Implement health check endpoints
+
+## Environment Management
+- Use separate environments for dev/staging/production
+- Implement proper environment variable management
+- Use different databases for each environment
+- Test deployments in staging before production
+- Implement proper backup and recovery procedures
+- Monitor resource usage across environments
+- Use infrastructure as code where possible
